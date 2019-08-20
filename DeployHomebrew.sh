@@ -21,6 +21,8 @@ then
     softwareupdate -i "$cmd_line_tools"
     rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
     /usr/bin/xcode-select --switch /Library/Developer/CommandLineTools
+else
+	echo "XCode CLI Tools already installed"
 fi
 
 # Test if Homebrew is installed and install it if it is not

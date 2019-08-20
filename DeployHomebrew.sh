@@ -46,6 +46,8 @@ if test ! "$(sudo -u $ConsoleUser which brew)"; then
 
   # Install Homebrew as the currently logged in user
   sudo -H -u $ConsoleUser ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"  </dev/null
+  # Install Homebrew Cask as the currently logged in user
+sudo -H -u $ConsoleUser brew tap caskroom/cask  </dev/null  
 # If Homebrew is already installed then just echo that it is already installed
 else
   echo "Homebrew is already installed"
